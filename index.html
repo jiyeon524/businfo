@@ -38,7 +38,7 @@
                 <h1> Bus Information System </h1>
                 <p class="lead">Powered by AWS</p>
                 <h3> Please select a bus station and type a bus number that you want to get alarm.</h3>
-                <form>
+                <form id="businfo">
                     <label> Bus Station : </label>
                     <select id="station">
                         <option value=''>--- Select ---</option>
@@ -48,7 +48,7 @@
                         <option value="sleung"> Seolleung Station </option>
                     </select>
                     <label> Bus Number : </label>
-                    <input type="text" name="busnumber" />
+                    <input type="text" name="busnumber" id="bnumber"/>
                     <br><br>
                     <button id="start-button" onclick="button_clicked()">
                         Start Tracking
@@ -64,10 +64,10 @@
         <script src="js/scripts.js"></script>
         
         
-        <p id="test"></p>
         <script>
             function button_clicked(){
-                document.getElementByld("test").innerHTML="Now you can get notifications via Slack";
+//                 document.getElementByld("test").innerHTML="Now you can get notifications via Slack";
+                alert('Hi, there!');
             }
         </script>
     </body>
