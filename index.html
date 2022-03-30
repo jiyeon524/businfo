@@ -37,11 +37,8 @@
             <div class="text-center mt-5">
                 <h1> Bus Information System </h1>
                 <p class="lead">Powered by AWS</p>
-                <p> Please select a bus station and type a bus number that you want to get alarm.</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
+                <p class="display-1"> Please select a bus station and type a bus number that you want to get alarm.</p>
+                
                 <label> Bus Station : </label>
                 <select id="station">
                     <option value=''>--- Select ---</option>
@@ -50,11 +47,12 @@
                     <option value="y3"> Yeoksam Station </option>
                     <option value="sleung"> Seolleung Station </option>
                 </select>
+                
                 <label> Bus Number : </label>
                 <input type="text" name="busnumber" />
                 <button id="start-button" onclick="button_clicked()">
                     Start Tracking
-                </button>                
+                </button>   
             </div>
         </div>
         <!-- Bootstrap core JS-->
