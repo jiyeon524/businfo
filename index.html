@@ -37,11 +37,37 @@
             <div class="text-center mt-5">
                 <h1> Bus Information System </h1>
                 <p class="lead">Powered by AWS</p>
+                <p> Please select a bus station and type a bus number that you want to get alarm.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label> Bus Station : </label>
+                <select id="station">
+                    <option value=''>--- Select ---</option>
+                    <option value="C-East"> Centerfield East </option>
+                    <option value="C-West"> Centerfield West </option>
+                    <option value="y3"> Yeoksam Station </option>
+                    <option value="sleung"> Seolleung Station </option>
+                </select>
+                <label> Bus Number : </label>
+                <input type="text" name="busnumber" />
+                <button id="start-button" onclick="button_clicked()">
+                    Start Tracking
+                </button>                
             </div>
         </div>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        
+        
+        <p id="test"></p>
+        <script>
+            function button_clicked(){
+                document.getElementByld("test").innerHTML="Now you can get notifications via Slack";
+            }
+        </script>
     </body>
 </html>
