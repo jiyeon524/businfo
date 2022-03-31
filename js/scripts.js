@@ -10,7 +10,9 @@ myForm.addEventListener('start-button', onSubmit);
 
 function onSubmit(e) {
   e.preventDefault();
-
+  
+  document.getElementByld("test").innerHTML="Now you can get notifications via Slack";
+  
   const url = 'https://rzgz7n5oq5.execute-api.ap-northeast-2.amazonaws.com/dev';
 
   const file = {
