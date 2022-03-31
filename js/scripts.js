@@ -2,6 +2,7 @@ const myForm = document.querySelector('#businfo');
 myForm.addEventListener('start', onSubmit);
 
 function onSubmit(e) {
+  console.log("hi");
   e.preventDefault();
 
   const url = 'https://rzgz7n5oq5.execute-api.ap-northeast-2.amazonaws.com/dev';
